@@ -1,16 +1,287 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kommunalwahl AfD Euskirchen</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #0077c0;
+        color: white;
+        padding: 10px 20px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+    nav {
+        background-color: #005a99;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav a, nav button {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        text-align: left;
+    }
+    nav a:hover, nav button:hover {
+        background-color: #004070;
+    }
+    .dropdown {
+        position: relative;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #005a99;
+        min-width: 200px;
+        z-index: 1;
+        flex-direction: column;
+    }
+    .dropdown-content a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #004070;
+    }
+    /* Sichtbar, wenn active */
+    .dropdown.active .dropdown-content {
+        display: flex;
+    }
+    main {
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    /* Hauptüberschrift */
+h2 {
+  color: #00539f;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
 
-<!--
-**AfD-kommunalwahlen/AfD-Kommunalwahlen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+/* Kleinere Zwischenüberschrift */
+h3 {
+  color: #0077c0;
+  font-size: 1.3em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
-Here are some ideas to get you started:
+/* Noch kleinere, untergeordnete Zwischenüberschrift */
+h4 {
+  color: #0091d5;                /* Helles Blau, dezenter */
+  font-size: 1em;                /* Noch kleiner als h3 */
+  font-weight: 500;              /* Mittelstark */
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-left: 3px solid #0077c0; /* Linker Farbstrich als Akzent */
+  padding-left: 10px;
+}
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>AfD Euskirchen Kommunalwahl</h1>
+</header>
+<nav>
+    <a href="#start">Start</a>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    <!-- Dropdown Themen -->
+    <div class="dropdown">
+        <button>Themen ▾</button>
+        <div class="dropdown-content">
+            <a href="#thema0">Kandidaten und mehr</a>
+            <a href="#thema1">Grenzschutz</a>
+            <a href="#thema2">Wohnraum</a>
+            <a href="#thema3">Landwirtschaft</a>
+            <a href="#thema4">Natur schützen</a>
+            <a href="#thema5">Hochwasserschutz</a>
+            <a href="#thema6">Schulen</a>
+            <a href="#thema7">Erstaufnahmeeinrichtungen stoppen</a>
+            <a href="#thema8">Wirtschaft</a>
+            <a href="#thema9">Verkehr</a>
+        </div>
+    </div>
+
+    <!-- Dropdown Mehr -->
+    <div class="dropdown">
+        <button>Mehr ▾</button>
+        <div class="dropdown-content">
+            <a href="https://afd-euskirchen.de/partei/vorstand/">Vorstand</a>
+            <a href="#aktuelles">Aktuelles</a>
+            <a href="#politik">Politik</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#mitglied">Mitglied werden</a>
+            <a href="#foerderer">Förderer werden</a>
+            <a href="#unterstuetzer">Unterstützer werden</a>
+            <a href="#spenden">Spenden</a>
+        </div>
+    </div>
+
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+    <section id="start">
+        <h2>Willkommen</h2>
+        <p>"Kommunalwahl AfD Euskirchen“ wird von einer überparteilichen Bürgerinitiative betrieben, die politische Transparenz fördern will. Die Betreiber sind nicht offiziell der AfD zuzuordnen, setzen aber inhaltlich einen Schwerpunkt auf deren Wahlprogramm, da diese Partei in klassischen Medien weniger präsent ist.
+Kurzprofil der Initiative: Unabhängig, ohne formale AfD-Anbindung, Fokus auf Transparenz, besonders zu AfD-Inhalten, Lokaler Schwerpunkt: Kommunalwahl in Euskirchen und anderen Städten.</p>
+    </section>
+    
+  <section id="thema0">
+        <h2>AfD Kreis Euskirchen – Kommunalwahl 2025: Stark vor Ort, stark für Sie</h2>
+        <p>Bei den Kommunalwahlen am 14. September 2025 tritt die AfD im Kreis Euskirchen in sieben Kommunen an. Neben den Bürgermeisterkandidaten in Kall und Weilerswist stellt die Partei in weiteren Städten und Gemeinden Kandidaten für die Stadt- und Gemeinderäte auf. In Zülpich, Blankenheim, Hellenthal und Dahlem wird die AfD nicht kandidieren.
+<h3>Bürgermeisterkandidaten der AfD im Kreis Euskirchen</h3>
+<h4>Harry Deutsch – Bürgermeisterkandidat in Kall</h4>
+Harry Deutsch ist ein erfahrener Kommunalpolitiker und engagierter Bürger, der sich seit Jahren für die Belange der Menschen in Kall einsetzt. Er legt besonderen Wert auf die Stärkung der Sicherheit vor Ort durch engere Zusammenarbeit von Polizei und kommunalen Behörden. Für ihn steht der Erhalt der ländlichen Strukturen und der heimischen Landwirtschaft im Mittelpunkt, gerade angesichts zunehmender Regulierungen, die kleine Betriebe bedrohen. Ein weiteres zentrales Anliegen ist die Förderung der regionalen Wirtschaft. Deutsch will das Handwerk und den Mittelstand stärken, Arbeitsplätze sichern und die Infrastruktur, vor allem im Verkehrs- und Digitalbereich, zukunftsfähig ausbauen. Seine Politik basiert auf Transparenz und Bürgernähe – er möchte Kall gemeinsam mit den Bürgerinnen und Bürgern gestalten.<p>
+<h4>Simon Müller – Bürgermeisterkandidat in Weilerswist</h4>
+<p>Simon Müller bringt als AfD-Kandidat frischen Wind in die Kommunalpolitik von Weilerswist. Mit seinem wirtschaftlichen und verwaltungstechnischen Hintergrund kennt er die Herausforderungen seiner Gemeinde genau. Müller will die Infrastruktur konsequent weiterentwickeln und den Wohnungsbau vorantreiben, damit vor allem Familien bezahlbaren Wohnraum finden. Dabei soll die gewachsene Struktur der Gemeinde bewahrt werden. Ein weiterer Schwerpunkt ist die Stärkung der heimischen Wirtschaft durch gezielte Förderung kleiner und mittlerer Unternehmen und die Vergabe öffentlicher Aufträge an lokale Betriebe. Als Bürgermeister will Müller die Verwaltung transparent und bürgernah führen und die demokratischen Prozesse durch aktive Beteiligung der Bürgerinnen und Bürger stärken.<p>
+<h3>AfD-Ergebnis bei der letzten Kommunalwahl in der Stadt Euskirchen (2020)</h3>
+<p>Bei der Kommunalwahl 2020 erreichte die AfD in der Stadt Euskirchen einen Stimmenanteil von rund 7,6 % und konnte sich damit mehrere Sitze im Stadtrat sichern. Dieses Ergebnis markierte den Einstieg der Partei in die kommunale Vertretung.<p>
+<h3>AfD-Ergebnis bei der Bundestagswahl 2025 in der Stadt Euskirchen</h3>
+<p>Bei der Bundestagswahl 2025 konnte die AfD ihr Ergebnis in der Stadt Euskirchen erheblich verbessern und erreichte dort beeindruckende 22,13 % der Zweitstimmen. Diese starke Steigerung um fast 15 Prozentpunkte gegenüber 2020 zeigt eine deutlich wachsende Unterstützung und bietet der Partei eine sehr gute Ausgangslage für die anstehenden Kommunalwahlen.
+<p>Auch in den weiteren Städten und Gemeinden des Kreises Euskirchen konnte die AfD ihre Wahlergebnisse bei der Bundestagswahl 2025 deutlich verbessern. Dieses bundesweite Plus spiegelt sich in der Region wider und gibt der Partei Rückenwind, um in den Kommunalparlamenten noch stärker vertreten zu sein.
+<h4>Ausblick auf die Kommunalwahl 2025 in der Stadt Euskirchen</h4>
+<p>Mit dem enorm gestiegenen Zuspruch in der Bevölkerung geht die AfD optimistisch in den Kommunalwahlkampf 2025. Ziel ist es, den Stimmenanteil weiter auszubauen und mehr Einfluss im Stadtrat zu gewinnen, um lokale Themen wie Sicherheit, Wohnraum und Wirtschaft noch wirkungsvoller vertreten zu können.
+<h3>Fazit: Ihre Stimme für eine starke Zukunft</h3>
+<p>Die AfD im Kreis Euskirchen steht für eine Politik, die vor Ort wirkt, Probleme klar benennt und anpackt. Mit Bürgermeisterkandidaten wie Harry Deutsch und Simon Müller sowie engagierten Stadtratskandidaten bietet die AfD eine starke Alternative für eine sichere, lebenswerte und wirtschaftlich starke Heimat. Nutzen Sie Ihre Stimme, um gemeinsam mit uns die Zukunft Ihrer Gemeinde zu gestalten.</p>
+    </section>
+    
+    <section id="thema1">
+        <h2>Grenzschutz im Westen – Sicherheit für Euskirchen</h2>
+        <h4>Was bedeutet Grenzschutz?</h4>
+<p>Grenzschutz heißt, dass Länder ihre Grenzen überwachen und kontrollieren, um unerlaubte Einreisen, Schmuggel und Kriminalität zu verhindern. Besonders an der Grenze zu Belgien und Luxemburg ist das wichtig, weil hier oft Schleuser und Drogendealer unterwegs sind.</p>
+<h4>Stärkere Kontrollen gegen Kriminalität</h4>
+<p>Im Kreis Euskirchen fordert die AfD verstärkte Kontrollen an den Grenzübergängen. Polizei und Zoll sollen enger zusammenarbeiten, um Kriminelle schneller zu stoppen.</p>
+<h4>Warum ist das wichtig für uns?</h4>
+<p>Mehr Sicherheit an der Grenze schützt die Menschen vor Einbrüchen, Drogenhandel und illegaler Schleusung. So fühlen sich die Bürger in Euskirchen sicherer und können beruhigt leben.</p>
+    </section>
+
+    <section id="thema2">
+        <h2>Wohnraum zuerst für unsere Leute – nicht für Berlin-Quoten</h2>
+        <h4>Warum ist bezahlbarer Wohnraum knapp?</h4>
+<p>In Euskirchen, Mechernich und Zülpich gibt es zu wenige Wohnungen. Politische Quoten aus Berlin erschweren, dass Einheimische bevorzugt werden und sorgen für noch höhere Preise.</p>
+<h4>Bevorzugung von Einheimischen bei der Wohnungsvergabe</h4>
+<p>Die AfD fordert, dass Einheimische und langjährige Bewohner bei der Vergabe von Wohnraum Vorrang bekommen – statt politischer Vorgaben aus der Hauptstadt.</p>
+<h4>Schluss mit Umnutzung von Immobilien zu Asylunterkünften</h4>
+<p>Die Partei lehnt die Umwandlung von leerstehenden Häusern in Flüchtlingsunterkünfte ab, da dies Wohnraum für Einheimische verdrängt.</p>
+  </section>
+
+    <section id="thema3">
+        <h2>Eifel-Bauern schützen – keine EU-Verbote auf unseren Feldern</h2>
+        <h4>Die Bedeutung der Milch- und Viehwirtschaft in der Eifel</h4>
+<p>Bauern in Nettersheim, Kall und Dahlem sorgen für Lebensmittel und prägen die Landschaft des Kreises Euskirchen</p>
+<h4>Gegen Flächenstilllegung und übermäßige Auflagen</h4>
+<p>Die AfD lehnt EU-Verbote und Auflagen ab, die kleine Höfe wirtschaftlich zerstören und Flächen brachliegen lassen.</p>
+<h4>Erhalt der bäuerlichen Betriebe sichert die Region</h4>
+<p>Nur mit starken Bauern bleibt die regionale Landwirtschaft lebendig und die Kulturlandschaft erhalten.</p>
+    </section>
+    
+ <section id="thema4">
+        <h2>Keine Monster-Windräder im Naturpark Eifel</h2>
+        <h4>Ein Naturjuwel bewahren</h4>
+<p>Die Eifel ist eine der letzten großen, unverfälschten Naturlandschaften in Deutschland – ein wertvolles Naturerbe, das auch im Kreis Euskirchen zahlreiche Menschen zu schätzen wissen.</p>
+<h4>Kritik an weiteren Windkraftanlagen</h4>
+<p>Die AfD spricht sich entschieden gegen den Bau weiterer großer Windkraftanlagen in der Region aus, etwa in Blankenheim, Hellenthal oder Schleiden. „Monster-Windräder“ würden das Landschaftsbild zerstören, den Tourismus beeinträchtigen und die Lebensqualität der Menschen mindern.</p>
+<h4>Zweifel an der Energiewende</h4>
+<p>Zudem bezweifelt die Partei den Nutzen solcher Anlagen für die Energieversorgung.</p>
+<h4>Forderung nach grundlastfähiger Energie</h4>
+<p>Stattdessen fordert sie eine Förderung günstiger und grundlastfähiger Energieformen, die verlässlich und bezahlbar sind. Die sogenannte Energiewende, wie sie derzeit oft betrieben wird, betrachtet die AfD als riskantes Experiment.</p>
+    </section>
+    
+     <section id="thema5">
+        <h2>Hochwasserschutz für Erft & Olef statt grüner Prestigeprojekte</h2>
+        <h4>Die Lektionen der Flutkatastrophe 2021</h4>
+<p>Die Hochwasserkatastrophe im Juli 2021 hat in Teilen des Kreises Euskirchen, insbesondere an Flüssen wie Erft und Olef, verheerende Schäden angerichtet.</p>
+<h4>Priorität für konkrete Schutzmaßnahmen</h4>
+<p>Die AfD fordert, dass künftig der Hochwasserschutz an diesen Gewässern oberste Priorität erhält. Dazu gehören der Ausbau von Dämmen, der Bau von Rückhaltebecken und der Ausbau moderner Frühwarnsysteme.</p>
+<h4>Kritik an grünen Prestigeprojekten</h4>
+<p>Statt Gelder in sogenannte grüne Prestigeprojekte zu investieren, die oft wenig konkreten Nutzen für die Bevölkerung bringen, soll der Schutz vor Naturkatastrophen im Vordergrund stehen.</p>
+<h4>Sicherheit vor Ideologie</h4>
+<p>Nur mit einer praxisorientierten und wirksamen Hochwasserschutzpolitik kann eine Wiederholung der verheerenden Ereignisse verhindert werden.</p>
+    </section>
+    
+     <section id="thema6">
+        <h2>Schulen im Kreis fit machen – Schluss mit Bildungsexperimenten</h2>
+        <p>Die Qualität der Bildung vor Ort ist entscheidend für die Zukunft der Kinder und Jugendlichen im Kreis Euskirchen. Die AfD kritisiert daher die in den letzten Jahren zunehmend dominierende Gender-Ideologie und andere „Bildungsexperimente“, die nach ihrer Auffassung den Fokus auf Leistung und Sachkunde verwässern. Die Partei fordert eine Ausstattungsoffensive für Schulen in Städten wie Euskirchen, Schleiden und Weilerswist. Dazu gehören moderne Lehrmittel, gut ausgestattete Klassenzimmer und eine bessere Förderung von Lehrkräften. Gleichzeitig soll der Unterricht wieder klar leistungsorientiert gestaltet werden – mit einer Vermittlung von Wissen, das für Ausbildung und Beruf notwendig ist. Die AfD lehnt politische Indoktrination und ideologische Eingriffe in den Unterricht strikt ab. Bildung soll wieder mehr auf Leistung, Inhalte und die Zukunft der Schüler ausgerichtet sein.</p>
+    </section>
+    
+     <section id="thema7">
+        <h2>Euskirchen darf nicht zur Durchgangsstation werden</h2>
+        <p>Der Kreis Euskirchen sieht sich in den letzten Jahren verstärkt mit Zuweisungen von Asylbewerbern und Flüchtlingen konfrontiert, die oft nur vorübergehend untergebracht werden. Die AfD spricht sich entschieden gegen einen weiteren Ausbau von Erstaufnahmeeinrichtungen im Kreis aus. Der Kreis dürfe nicht zur Durchgangsstation für Migration werden, da dies die Infrastruktur überfordere und zu sozialen Spannungen führe. Stattdessen soll die Politik darauf dringen, dass abgelehnte Asylbewerber konsequent abgeschoben werden, um die Belastungen für die Kommunen zu reduzieren. Eine konsequente Durchsetzung des Rechtsstaates und eine klare Steuerung der Zuwanderung sieht die AfD als notwendig, um die Lebensqualität für die Bevölkerung im Kreis Euskirchen zu sichern.</p>
+    </section>
+    
+     <section id="thema8">
+        <h2>Regionale Wirtschaft stärken – Aufträge an Betriebe von hier</h2>
+        <p>Die wirtschaftliche Basis des Kreises Euskirchen beruht zu einem großen Teil auf Handwerk, Mittelstand und kleinen bis mittelgroßen Unternehmen. Die AfD fordert daher, dass öffentliche Aufträge verstärkt an regionale Betriebe vergeben werden. Dies soll die lokale Wirtschaft stärken, Arbeitsplätze sichern und dafür sorgen, dass Wertschöpfung im Kreis bleibt. Statt Großkonzerne oder externe Dienstleister zu bevorzugen, soll die Politik die regionale Wirtschaft fördern. Förderprogramme für Handwerk und Mittelstand sind notwendig, um den Standort Kreis Euskirchen attraktiv zu halten. Denn nur eine starke, unabhängige Wirtschaft vor Ort sichert die Zukunftsfähigkeit der Region und bietet den Menschen gute Perspektiven.</p>
+    </section>
+    
+     <section id="thema9">
+        <h2>A1-Lückenschluss fertigstellen – Verkehrsanbindung für den Kreis Euskirchen verbessern</h2>
+<h4>Was ist der A1-Lückenschluss?</h4>
+<p>Der A1-Lückenschluss ist ein wichtiger Abschnitt der Autobahn A1, der im Raum Blankenheim noch nicht fertiggestellt ist. Diese Autobahn verbindet den Norden und Süden Nordrhein-Westfalens und ist wichtig für den Verkehr.</p>
+<h4>Warum ist der A1-Lückenschluss wichtig für Euskirchen?</h4>
+<p>Ohne den Lückenschluss sind viele Straßen im Kreis Euskirchen überlastet. Pendler, Firmen und der öffentliche Verkehr haben Probleme, schnell und sicher an ihr Ziel zu kommen. Die fehlende Verbindung sorgt für Staus und längere Fahrtzeiten.</p>
+<h4>Was fordert die AfD?</h4>
+<p>Die AfD fordert, den A1-Lückenschluss so schnell wie möglich fertigzustellen. Nur mit dieser Verbindung kann die Verkehrssituation im Kreis Euskirchen verbessert werden. Der Lückenschluss entlastet die Straßen und bringt wirtschaftliche Vorteile, weil Firmen schneller Waren transportieren können.</p>
+<h4>Welche Vorteile hat das für die Menschen?</h4>
+<p>Schnellere und sicherere Verbindungen bedeuten weniger Stress im Alltag. Pendler sparen Zeit, Lieferungen kommen pünktlicher an, und die Region wird attraktiver für Unternehmen und Familien.</p>
+    </section>
+    
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>afd-kommunalwahlen@outlook.de</p>
+        <p>Telefon: 01234 56789</p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Kommunalwahl AfD Euskirchen
+</footer>
+
+<script>
+    // Klick-Logik für Dropdowns
+    document.querySelectorAll('.dropdown button').forEach(button => {
+        button.addEventListener('click', () => {
+            const dropdown = button.parentElement;
+            // Falls ein anderes Dropdown offen ist, schließen
+            document.querySelectorAll('.dropdown').forEach(d => {
+                if (d !== dropdown) d.classList.remove('active');
+            });
+            // Eigenes Dropdown umschalten
+            dropdown.classList.toggle('active');
+        });
+    });
+
+    // Schließen beim Klick außerhalb
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+        }
+    });
+</script>
+</body>
+</html>
